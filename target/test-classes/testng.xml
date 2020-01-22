@@ -9,9 +9,9 @@
                 </run>
         </groups>
 
-        <classes>
-            <class name="samples.FirstTest" />
-        </classes>
+<!--        <classes>-->
+<!--            <class name="samples.FirstTest" />-->
+<!--        </classes>-->
     </test>
 
     <test name="test2" >

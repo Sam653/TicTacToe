@@ -1,3 +1,5 @@
+package MyTest;
+
 public class _TicTacToe {
 
     public static void main(String[] args) {
