@@ -1,7 +1,6 @@
 package MyTest;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class MyTest {
@@ -19,11 +18,11 @@ public class MyTest {
     final String MOVE_O = "xxo------";
     final String WIN_WIN = "xxxooooxx";
 
-    @BeforeTest
-    public void beforeTest() {
-        System.out.println(" ");
-        System.out.println("••• A new Test:");
-    }
+//    @BeforeTest
+//    public void beforeTest() {
+//        System.out.println(" ");
+//        System.out.println("••• A new Test:");
+//    }
 
     @Test
     public void status01() {
