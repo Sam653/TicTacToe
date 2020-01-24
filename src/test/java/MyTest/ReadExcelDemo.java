@@ -1,3 +1,4 @@
+/*
 package MyTest;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -21,6 +22,12 @@ public class ReadExcelDemo {
         // http://java-online.ru/java-excel-read.xhtml
         // https://www.codeflow.site/ru/article/java-microsoft-excel
 
+//    public static String fileToBeRead = "С:\\test.xls";
+//    public static String TESTDATA_PATH = "src/test/java/TestData/TTTdata.xlsx"; { System.out.println(TESTDATA_PATH);}
+
+//        https://o7planning.org/ru/11259/read-write-excel-file-in-java-using-apache-poi
+//        https://youtu.be/rxlhK8AeD0Q
+
         Iterator rowIter = sheet.rowIterator();
         while (rowIter.hasNext()) {
             XSSFRow row = (XSSFRow) rowIter.next();
@@ -35,18 +42,16 @@ public class ReadExcelDemo {
 
 
 
-        /*Когда значение перечисления типа ячейки STRING , содержимое будет считано с использованием метода getRichStringCellValue () интерфейса Cell :
-
-        data.get(new Integer(i)).add(cell.getRichStringCellValue().getString());
-        Ячейки с типом содержимого NUMERIC могут содержать дату или число и считываться следующим образом:
-
-        if (DateUtil.isCellDateFormatted(cell)) {
-            data.get(i).add(cell.getDateCellValue() + "");
-        } else {
-            data.get(i).add(cell.getNumericCellValue() + "");
-        }*/
-
-
+//        Когда значение перечисления типа ячейки STRING , содержимое будет считано с использованием метода getRichStringCellValue () интерфейса Cell :
+//
+//        data.get(new Integer(i)).add(cell.getRichStringCellValue().getString());
+//        Ячейки с типом содержимого NUMERIC могут содержать дату или число и считываться следующим образом:
+//
+//        if (DateUtil.isCellDateFormatted(cell)) {
+//            data.get(i).add(cell.getDateCellValue() + "");
+//        } else {
+//            data.get(i).add(cell.getNumericCellValue() + "");
+//        }
 
 
 
@@ -55,42 +60,41 @@ public class ReadExcelDemo {
 
 
 
-        // дальше тупо скомунизженно  : ((
-
-        /*        Iterator<Row> rowIterator = sheet.iterator(); // Получить итератор для строк в табе
-
-        while (rowIterator.hasNext()) {
-            Row row = rowIterator.next();
-            // Get iterator to all cells of current row
-            Iterator<Cell> cellIterator = row.cellIterator();
-
-            while (cellIterator.hasNext()) {
-                Cell cell = cellIterator.next();
-                // Change to getCellType() if using POI 4.x
-                CellType cellType = cell.getCellTypeEnum();
-
-                switch (cellType) {
-                    case _NONE:
-                        System.out.print("");
-                        System.out.print("\t");
-                        break;
-                    case NUMERIC:
-                        System.out.print(cell.getNumericCellValue());
-                        System.out.print("\t");
-                        break;
-                    case STRING:
-                        System.out.print(cell.getStringCellValue());
-                        System.out.print("\t");
-                        break;
-                }
-            }
-            System.out.println("");
-        }*/
 
 
-
-
-
+//        // дальше тупо скомунизженно  : ((
+//
+//                Iterator<Row> rowIterator = sheet.iterator(); // Получить итератор для строк в табе
+//
+//        while (rowIterator.hasNext()) {
+//            Row row = rowIterator.next();
+//            // Get iterator to all cells of current row
+//            Iterator<Cell> cellIterator = row.cellIterator();
+//
+//            while (cellIterator.hasNext()) {
+//                Cell cell = cellIterator.next();
+//                // Change to getCellType() if using POI 4.x
+//                CellType cellType = cell.getCellTypeEnum();
+//
+//                switch (cellType) {
+//                    case _NONE:
+//                        System.out.print("");
+//                        System.out.print("\t");
+//                        break;
+//                    case NUMERIC:
+//                        System.out.print(cell.getNumericCellValue());
+//                        System.out.print("\t");
+//                        break;
+//                    case STRING:
+//                        System.out.print(cell.getStringCellValue());
+//                        System.out.print("\t");
+//                        break;
+//                }
+//            }
+//            System.out.println("");
+//        }
 
     }
 }
+
+*/
