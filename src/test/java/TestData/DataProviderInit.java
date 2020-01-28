@@ -14,6 +14,32 @@ public class DataProviderInit {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    // OLD - 1 variables
 //    @DataProvider(name = "InputtingOfString")
 //    public Object[][] combinations() {

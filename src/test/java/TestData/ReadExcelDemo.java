@@ -15,20 +15,44 @@ public class ReadExcelDemo {
         XSSFWorkbook workbook = new XSSFWorkbook(inputStream); // Получить экземпляр книги для файла
         XSSFSheet sheet = workbook.getSheetAt(0); // Открыть ПЕРВУЮ табу файла
 
-//        String [][] data = null;
-//        data = new String[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-
         Object [][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 
         for (int i = 0; i < sheet.getLastRowNum(); i++) {
             for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
                 data[i][j] = sheet.getRow(i + 1).getCell(j).toString();
-                //System.out.println(data[i][j]); // для ПРОВЕРКИ
             }
         }
         return data;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // https://habr.com/ru/post/56817/
 // http://java-online.ru/java-excel-read.xhtml
