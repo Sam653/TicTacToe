@@ -9,36 +9,13 @@ public class DataProviderInit {
     @DataProvider(name = "getExcelArray")
     public Object[][] getExcelArray() throws IOException {
         Object data[][] = ReadExcelDemo.getExcelArray("Sheet1");
-        //System.out.println(data); // для ПРОВЕРКИ
         return data;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Useful articles/movies:
+// https://howtodoinjava.com/testng/testng-dataprovider/
+// https://youtu.be/O8yP672fogE
 
 //    // OLD - 1 variables
 //    @DataProvider(name = "InputtingOfString")
@@ -51,6 +28,3 @@ public class DataProviderInit {
 //    public Object[][] combinations() {
 //        Object[][] data = {{"xo-", "invalid"}, {"xo-------", "valid"}};
 //        return data; }
-
-//        https://howtodoinjava.com/testng/testng-dataprovider/
-//        https://youtu.be/O8yP672fogE

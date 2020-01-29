@@ -9,8 +9,8 @@ public class _TicTacToe {
 
     // задаем стрингу
     public void gameLaunch() {
-        String mystring = "xxxooooxx"; // невалидная стринга, 2 победителя
-        //String mystring = "xxxoo----"; // валидная стринга, Х победил
+        String mystring = "xxxooooxx"; // invalid, 2 winners
+        //String mystring = "xxxoo----"; // valid, Х won
 
         Validation aNewLaunch = new Validation();
 

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Validation {
 
-    // ПРОВЕРКА - стринга должна быть из 9 символов
+    // String must have 9 symbols
     public boolean lengthValidation(String mystring) {
         if (mystring.length() == 9) {
             return true;
@@ -15,7 +15,7 @@ public class Validation {
         }
     }
 
-    // ПРОВЕРКА - можно юзать только "х", "о" (в любом регистре) или "-"
+    // String must use "х", "о" (any register) or "-" only
     public boolean characterValidation(String mystring) {
         Matcher matcher = Pattern.compile("([^XxOo-])").matcher(mystring);
         int counter = 0;
@@ -32,7 +32,7 @@ public class Validation {
         }
     }
 
-    // ПРОВЕРКА - валидные данные, но некоректный статус
+    // Check for invalid status
     public boolean combinationValidation(String mystring) {
         Matcher matcherX = Pattern.compile("([Xx])").matcher(mystring);
         Matcher matcherO = Pattern.compile("([Oo])").matcher(mystring);
@@ -58,7 +58,7 @@ public class Validation {
         }
     }
 
-    // ПРОВЕРКА - возможная победа Х или О (ну да, код цейлонский, зато не скомунидзенно)
+    // Possible win of Х or О (yep, stupid code, but mine)
     public boolean winValidation(String mystring) {
 
         int counter = 0;
@@ -105,7 +105,7 @@ public class Validation {
         System.out.println("The player '" + winner + "' won");
         return false;
     }
-    // ПРОВЕРКА - возможная ничья (все ячейки заняты, но нет победителя)
+    // Possible draw (all cells are filled, but no winner)
     public boolean drawValidation(String mystring) {
         Matcher matcher = Pattern.compile("([-])").matcher(mystring);
         int counter = 0;
@@ -122,7 +122,7 @@ public class Validation {
         }
     }
 
-    // ПРОВЕРКА - чей ход если нет победителя и остались свободные ходы
+    // Whose move in case of free move
     public boolean whoseMoveValidation(String mystring) {
         Matcher matcherX = Pattern.compile("([Xx])").matcher(mystring);
         Matcher matcherO = Pattern.compile("([Oo])").matcher(mystring);

@@ -18,12 +18,6 @@ public class MyTest {
     final String MOVE_O = "xxo------";
     final String WIN_WIN = "xxxooooxx";
 
-//    @BeforeTest
-//    public void beforeTest() {
-//        System.out.println(" ");
-//        System.out.println("••• A new Test:");
-//    }
-
     @Test
     public void status01() {
         Decision decision = new Decision();
